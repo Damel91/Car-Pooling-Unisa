@@ -18,7 +18,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class ResultPage extends AppCompatActivity {
-
+    static String idTappa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,65 +55,72 @@ public class ResultPage extends AppCompatActivity {
         GregorianCalendar min = new GregorianCalendar();
 
         int last = tolleranza.lastIndexOf('m');
-        int tollerance =  Integer.parseInt(tolleranza.substring(1, last));
+        int tollerance = Integer.parseInt(tolleranza.substring(1, last));
 
-        if (title.equals("Passaggi trovati")){
+        if (title.equals("Passaggi trovati")) {
             andata.add(GregorianCalendar.MINUTE, tollerance);
             max.set(GregorianCalendar.HOUR_OF_DAY, andata.get(GregorianCalendar.HOUR_OF_DAY));
             max.set(GregorianCalendar.MINUTE, andata.get(GregorianCalendar.MINUTE));
-            andata.add(GregorianCalendar.MINUTE, -tollerance*2);
+            andata.add(GregorianCalendar.MINUTE, -tollerance * 2);
             min.set(GregorianCalendar.HOUR_OF_DAY, andata.get(GregorianCalendar.HOUR_OF_DAY));
             min.set(GregorianCalendar.MINUTE, andata.get(GregorianCalendar.MINUTE));
         }
 
         SimpleDateFormat in = new SimpleDateFormat("dd/MM/yyyy");
         SimpleDateFormat out = new SimpleDateFormat("yyyy-MM-dd");
+        String dataD = null;
         try {
             Date d = in.parse(data);
-            data = out.format(d);
+            dataD = out.format(d);
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        citta.replace(' ','_');
+        citta.replace(' ', '_');
 
 
-        ConnectToDatabase obj = new ConnectToDatabase("http://technidos.altervista.org/PhpProject/andata.php?data="+data+"&citta="+citta+"&maxBound="+max.get(GregorianCalendar.HOUR_OF_DAY)+":"+max.get(GregorianCalendar.MINUTE)+"&minBound="+min.get(GregorianCalendar.HOUR_OF_DAY)+":"+min.get(GregorianCalendar.MINUTE));
+        ConnectToDatabase obj = new ConnectToDatabase("http://technidos.altervista.org/PhpProject/andata.php?data=" + dataD + "&citta=" + citta + "&maxBound=" + max.get(GregorianCalendar.HOUR_OF_DAY) + ":" + max.get(GregorianCalendar.MINUTE) + "&minBound=" + min.get(GregorianCalendar.HOUR_OF_DAY) + ":" + min.get(GregorianCalendar.MINUTE));
 
-        while (obj.isConnected()==2);
-        if(obj.isConnected()==0)
+        while (obj.isConnected() == 2) ;
+        if (obj.isConnected() == 0)
             risultati.clear();
-            risultati.add("Passaggio non trovato");
-        if(obj.isConnected()==1){
-            while(!obj.isReady());
+        risultati.add("Passaggio non trovato");
+        if (obj.isConnected() == 1) {
+            while (!obj.isReady()) ;
             risultati.clear();
             result = obj.getJsonData();
             try {
-            for (int i=0; i<result.length; i++){
-                tupla = result[i];
-                risultati.add(""+tupla.getInt("rating"));
-            }
-            }catch (JSONException e) {
-                    e.printStackTrace();
+                for (int i = 0; i < result.length; i++) {
+                    tupla = result[i];
+                    risultati.add("Nome: " + tupla.getString("name") + "\n" + "Cognome: " + tupla.getString("surname") + "\n" + "Telefono: " + tupla.getString("cellulare") + "\n" + "Auto: " + tupla.getString("auto") + "\n" + "Colore: " + tupla.getString("colore") + "\n" + "Città: " + tupla.getString("citta") + "\n" + "Via: " + tupla.getString("via") +"\n"+ "Civico: " + tupla.getString("civico") + "\n" + "Data: "+data+"\n" + "Ora partenza: " + tupla.getString("ora_andata").substring(0,5) + "\n" + "Prezzo: " + tupla.getDouble("prezzo")+"€"+ "\n" + "Rating: " + tupla.getInt("rating"));
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
         }
-
-        rs.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            final String[] selectedItem = new String[1];
+        rs.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
-                rs.getSelectedItem();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                idTappa = (String) rs.getItemAtPosition(i);
+                try {
+                    for (int ctr = 0; ctr <= rs.getCount(); ctr++) {
+                        if (i == ctr) {
+                            rs.getChildAt(ctr).setBackgroundColor(Color.GRAY);
+                        } else {
+                            rs.getChildAt(ctr).setBackgroundColor(Color.WHITE);
+                        }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
 
         conferma.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                }
-            }
+                                        @Override
+                                        public void onClick(View v) {
+
+                                        }
+                                    }
         );
     }
 }

@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-    <RelativeLayout
+    <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_result_page"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
 
-    <ListView
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:id="@+id/rs"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/conferma"
-        android:layout_alignParentTop="true" />
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/rs"
+            android:layout_width="match_parent"
+            android:layout_height="352dp" />
+    </LinearLayout>
 
-    <Button
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:id="@+id/conferma"
-        android:layout_weight="1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Conferma"
-        android:textColor="#fff"
-        android:background="@drawable/btn"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/conferma"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Conferma"
+            android:textColor="#fff"
+            android:background="@drawable/btn"
+            />
+    </LinearLayout>
+
+</LinearLayout>
 
