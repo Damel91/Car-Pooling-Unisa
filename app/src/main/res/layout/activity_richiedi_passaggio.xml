@@ -1,0 +1,288 @@
+<!-- copyrighted content owned by Android Arena (www.androidarena.co.in)-->
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_richiedi_passaggio"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/greybackground"
+            android:weightSum="1"
+            android:layout_weight="1.08">
+
+            <ImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/waiting"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/colorWhite"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Città"
+                    />
+                <EditText
+                    android:id="@+id/citta"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="5dp"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/colorWhite"
+                >
+
+                <TextView
+
+                    android:id="@+id/data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Data"/>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/dataview"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+                <ImageButton
+                    android:id="@+id/button_calendar"
+                    android:layout_weight="0.06"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/calendario_icona"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorWhite"
+                android:rowCount="1"
+                android:columnCount="4">
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ora andata"
+                    android:layout_weight="1"
+                    />
+                <Spinner
+                    android:id="@+id/oraAndata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="#DCDCDC"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_weight="1"
+                    />
+                <Spinner
+                    android:id="@+id/minutiAndata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="#DCDCDC"
+
+                    />
+
+            </GridLayout>
+
+            <CheckBox
+                android:text="Cerca ritorno"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/cercaRitorno" />
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorWhite"
+                android:rowCount="1"
+                android:columnCount="4"
+                android:layout_weight="0.13">
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ora ritorno"
+                    android:layout_weight="1"
+                    />
+                <Spinner
+                    android:id="@+id/oraRitorno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="#DCDCDC"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_weight="1"
+                    />
+                <Spinner
+                    android:id="@+id/minutiRitorno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="#DCDCDC"
+
+                    />
+
+            </GridLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/colorWhite"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tolleranza"
+                    android:layout_weight="1"
+                    />
+
+                <Spinner
+                    android:id="@+id/tolleranza"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:popupBackground="#DCDCDC"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/cerca"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Ricerca"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

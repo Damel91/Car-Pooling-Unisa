@@ -1,0 +1,647 @@
+<!-- copyrighted content owned by Android Arena (www.androidarena.co.in)-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/greybackground"
+            android:weightSum="1">
+
+            <ImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fermate"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+
+                android:orientation="horizontal">
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/colorWhite"
+                >
+
+                <TextView
+
+                    android:id="@+id/data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Data"/>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/dataview"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+                <ImageButton
+                    android:id="@+id/button_calendar"
+                    android:layout_weight="0.06"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/calendario_icona"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/Spaziatore"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                >
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LayoutDinamico"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/colorWhite"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/tappa1"
+                    >
+                    <!--////////////////////////////Intestazioneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/////////////////////////////////////////////-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale1"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale2"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale3"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale4"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale5"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separatore1"
+                    >
+
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/tappa2"
+                    >
+                    <!--////////////////////////////Intestazioneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/////////////////////////////////////////////-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale6"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale7"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale8"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale9"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale10"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separatore2"
+
+                    >
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/tappa3"
+                    >
+                    <!--////////////////////////////Intestazioneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/////////////////////////////////////////////-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale11"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale12"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale13"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale14"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale15"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separatore3"
+
+                    >
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/tappa4"
+                    >
+                    <!--////////////////////////////Intestazioneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/////////////////////////////////////////////-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale16"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale17"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale18"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale19"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale20"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separatore4"
+
+                    >
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/tappa5"
+                    >
+                    <!--////////////////////////////Intestazioneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/////////////////////////////////////////////-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale21"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale22"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale23"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale24"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale25"
+                    android:orientation="horizontal"
+
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separatore5"
+
+                    >
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/tappa6"
+                    >
+                    <!--////////////////////////////Intestazioneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/////////////////////////////////////////////-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale26"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale27"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale28"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale29"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale30"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separatore6"
+
+                    >
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/tappa7"
+                    >
+                    <!--////////////////////////////Intestazioneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/////////////////////////////////////////////-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale31"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale32"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale33"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale34"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale35"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separatore7"
+
+                    >
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/tappa8"
+                    >
+                    <!--////////////////////////////Intestazioneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/////////////////////////////////////////////-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale36"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale37"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale38"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale39"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutDinamicoOrizontale40"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+
+                android:orientation="horizontal">
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/submit_offri_passaggio"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Conferma"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

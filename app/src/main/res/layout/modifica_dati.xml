@@ -1,0 +1,181 @@
+<!-- copyrighted content owned by Android Arena (www.androidarena.co.in)-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/greybackground"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/registrati"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#e8e8e7"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ricordi i tuoi dati?? Altrimenti..."/>
+                <TextView
+                    android:id="@+id/carica_dati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#DC143C"
+                    android:text="Premi :)"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/nameview"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                />
+
+            <EditText android:layout_width="fill_parent"
+                android:id="@+id/name"
+                android:layout_height="40dp"
+                android:hint="name"
+                android:background="#f3f3f3"
+                android:paddingLeft="5dp"
+            />
+
+            <TextView
+                android:id="@+id/surnameview"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+            <EditText android:layout_width="fill_parent"
+                android:id="@+id/surname"
+                android:layout_height="40dp"
+                android:hint="surname"
+                android:background="#f3f3f3"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/mailview"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="Modifica email"
+                android:background="#f3f3f3"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/cellulareView"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <EditText
+                android:id="@+id/n_cellulare"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="Modifica numero del cellulare"
+                android:numeric="integer"
+                android:background="#f3f3f3"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/modNascitaView"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <EditText
+                android:id="@+id/mod_dataNascita"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="Modifica data nascita"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="#f3f3f3"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/passwordview"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <EditText
+                android:id="@+id/pass_reg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="password"
+                android:password="true"
+                android:background="#f3f3f3"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/nonlouso"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+            <EditText
+                android:id="@+id/rip_pass_reg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="repeat password"
+                android:password="true"
+                android:background="#f3f3f3"
+                android:paddingLeft="5dp"
+              />
+            <Button
+                android:id="@+id/submit_reg"
+                android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="submit"
+                android:textColor="#fff"
+                android:background="@drawable/btn"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

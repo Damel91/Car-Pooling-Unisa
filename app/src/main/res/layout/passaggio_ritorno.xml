@@ -1,0 +1,353 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/greybackground"
+            android:weightSum="1">
+
+            <ImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fermate"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="Offerta del passaggio registrata con successo."/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="La inviatiamo a compilare i seguenti campi nel caso voglia attivare una funzione di ritorno da Fisciano!"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Partenza da fisciano"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/orario_partenza"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:hint="Inserisci un orario.."
+                    android:textSize="14dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LayoutDinamico"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/colorWhite"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vertical1"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separa_layout1"
+                    >
+
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vertical2"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separa_layout2"
+                    >
+
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vertical3"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separa_layout3"
+                    >
+
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vertical4"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separa_layout4"
+                    >
+
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vertical5"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separa_layout5"
+                    >
+
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vertical6"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separa_layout6"
+                    >
+
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vertical7"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#e8e8e7"
+                    android:id="@+id/separa_layout7"
+                    >
+
+                    <!--/////////////////////////////////////////////////////////////////////////-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vertical8"
+                    android:orientation="vertical"
+                    >
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/submit_offri_passaggio_ritorno"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Conferma"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/delete_offri_passaggio_ritorno"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Annulla"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

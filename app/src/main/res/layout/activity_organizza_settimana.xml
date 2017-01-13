@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_organizza_settimana"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/greybackground"
+    android:weightSum="1"
+    android:layout_weight="1.08">
+
+    <Spinner
+        android:id="@+id/oraAndata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:popupBackground="#DCDCDC"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:layout_weight="1"
+        />
+    <Spinner
+        android:id="@+id/minutiAndata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:popupBackground="#DCDCDC"
+
+        />
+    </GridLayout>
